@@ -5,8 +5,8 @@ Welcome to Hogwarts, the School of Whitchcraft and Wizardy. One of the tools tha
 ### Project Set Up
 
 [x] `cd` into `react-sorting-hat` directory and run `yarn install` to retrieve your dependancies.
-[] run `yarn start` to spin up your `webpack development server`
-[] Inside of `./react-sorting-hat/src` create a directory called `components` and start to think about all of the components you'll need for this application.
+[x] run `yarn start` to spin up your `webpack development server`
+[x] Inside of `./react-sorting-hat/src` create a directory called `components` and start to think about all of the components you'll need for this application.
 
 ### Project description and requirements
 

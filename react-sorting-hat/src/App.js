@@ -1,20 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Home from './components/page_home/home'
+import Questions from './components/page_questions/questions'
+import './reset.css'
 import './App.css';
 
+// const questions = [
+//   {
+//     question: "Dusk or Dawn?",
+//     answers: [
+//       {answer: "Dusk", points: [1,1,0,0]},
+//       {answer: "Dawn", points: [0,0,1,1]},
+//     ],
+//   },
+//   {
+//     question: "Which of the following would you most hate people to call you?",
+//     answers: [
+//       {answer: "Ordinary", points: [0,0,0,1]},
+//       {answer: "Ignorant", points: [0,1,0,0]},
+//       {answer: "Cowardly", points: [1,0,0,0]},
+//       {answer: "Selfish", points: [0,0,1,0]},
+//     ]
+//   }
+// ]
+
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      page: 'home',
+      questions: [],
+    }
+  }
+  componentDidMount() {
+    ///
+  }
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    if(this.state.page == 'home') return <Home />
+    if(this.state.page == 'questions') return <Questions />
   }
 }
 
