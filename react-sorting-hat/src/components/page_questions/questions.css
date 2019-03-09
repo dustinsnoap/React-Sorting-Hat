@@ -13,15 +13,15 @@
     text-align: center;
 }
 .question {
-    font-size: 3.3vw;
-    line-height: 5vw;
+    font-size: 2vw;
+    line-height: 3vw;
     border-bottom: 1px solid white;
     width: 100%;
     margin-bottom: 2.5vw;
 }
 .answer {
-    font-size: 2.5vw;
-    line-height: 5vw;
+    font-size: 2vw;
+    line-height: 3vw;
     width: 100%;
     margin: 1.25vw 0;
 }

@@ -10,6 +10,7 @@ class Questions extends Component {
             questions: questions,
             questionNum: 0,
             points: [0,0,0,0], //G, R, H, S
+            houseNames: ['Gryffindor', 'Ravenclaw','Hufflepuff','Slytherin']
         }
     }
     h_nextQuestion = value => {
@@ -18,9 +19,10 @@ class Questions extends Component {
             let points = prevState.points.map((p, i) => p + value[i])
             //increment question number
             let questionNum = prevState.questionNum + 1
-            if(questionNum >= this.state.questions.length) {
-                this.props.click('home')
-                questionNum = 0
+            if(questionNum >= prevState.questions.length) {
+                let max = prevState.points.indexOf(Math.max(...prevState.points))
+                this.props.click(prevState.houseNames[max])
+                questionNum = 0 //throw error w/o this
             }
             return {
                 questionNum: questionNum,
