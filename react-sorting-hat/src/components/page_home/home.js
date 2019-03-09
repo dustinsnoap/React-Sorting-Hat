@@ -3,11 +3,11 @@ import './home.css'
 
 const Home = props => {
     return (
-        <div className='home' onClick={() => console.log('farts')}>
+        <div className='home' onClick={() => props.click('questions')}>
             <figure className='hogwarts-logo'></figure>
             <h1>HOGWARTS SCHOOL</h1>
             <h2>OF WITCHCRAFT AND WIZARDRY</h2>
-            <pre>Click to find your house</pre>
+            <pre>CLICK TO REGISTER</pre>
             <figure className='footer-img'></figure>
         </div>
     )
