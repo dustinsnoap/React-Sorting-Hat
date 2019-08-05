@@ -1,0 +1,19 @@
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0,0,0,.77);
+    border-radius: .42vw;
+    padding: 5vw;
+    flex-direction: column;
+    width: 66vw;
+    max-width: 66vw;
+    text-align: center;
+}
+.result {
+    font-size: 5vw;
+    line-height: 5vw;
+    width: 100%;
+}

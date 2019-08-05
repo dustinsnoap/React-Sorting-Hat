@@ -1,0 +1,34 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.home .hogwarts-logo {
+    background-image: url('./hogwarts-logo.png');
+    height: 10vw;
+    width: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.home .footer-img {
+    background-image: url('./footer-img.png');
+    height: 4vw;
+    width: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1vw;
+}
+.home h1 {
+    font-size: 4.2vw;
+}
+.home h2 {
+    font-size: 2.55vw;
+}
+.home pre {
+    font-size: 1.25vw;
+    line-height: 1.75vw;
+}
